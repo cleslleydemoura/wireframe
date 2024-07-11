@@ -4,6 +4,10 @@
     font-family: 'Afacad', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
+nav ul li {
+  margin: 10px;
+}
 .newsletter {
   padding: 100px 40px;
   text-align: center;
