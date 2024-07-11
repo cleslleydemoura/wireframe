@@ -10,6 +10,7 @@ sua incrementação dentro do arquivo e sua linkagem dentro do código html: htt
   <li>Fontawesome</li>
 </ul>
 <p>Com um modelo prévio de como o site deveria ficar, fiz algumas modificações que creio eu que tornaram o site mais intuítivo e visualmente melhor, como os icons de redes sociais e a navbar para uma melhor navegação do usuário.</p>
+<p> Visualização no: <a href="https://codepen.io/cleslley/pen/QWRQGyN" target="_blank">WIREFRAME</a></p>
 
 ![image](https://github.com/cleslleydemoura/wireframe/assets/100368699/b9afaedb-1fa5-471c-ae8f-fdc111e29568)
 ![image](https://github.com/cleslleydemoura/wireframe/assets/100368699/d91f6e86-0a6c-43ed-87e4-4d8369a4b320)
