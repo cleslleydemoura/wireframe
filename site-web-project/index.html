@@ -14,184 +14,187 @@
 
   <!--          LINKS BOOTSTRAP E FONTAWESOME         -->
 <script src="https://kit.fontawesome.com/a24879a822.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
-  <div class="container">
-    <div class="row mt-4">
-        <div class="col-lg-8"> <!-- Lembrete: Dentro de cada 'row' a soma das divisões deve dar 12. -->
-            <h1>
-                <i class="fa-solid fa-plane"></i>
-                <span class="logo">O local que eu gostaria de conhecer! | Chile</span>
-            </h1>
+    <!--          PRIMEIRO CONTAINER CONTENDO NOME DO SITE E REDES SOCIAIS          -->
+<div class="container">
+        <div class="row mt-4">
+            <div class="col-lg-8"> <!-- Lembrete: Dentro de cada 'row' a soma das divisões deve dar 12. -->
+                <h1>
+                    <i class="fa-solid fa-plane"></i>
+                    <span class="logo">O local que eu gostaria de conhecer! | Chile</span>
+                </h1>
+            </div>
+            <div class="col-lg-4 mt-4" align="right">
+                <a href="#" class="btn btn-danger">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="btn btn-info">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                  <a href="#" class="btn btn-success">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="btn btn-info">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
         </div>
-        <div class="col-lg-4 mt-4" align="right">
-            <a href="#" class="btn btn-danger">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="btn btn-primary">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="#" class="btn btn-info">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-              <a href="#" class="btn btn-success">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="#" class="btn btn-info">
-                <i class="fa-brands fa-telegram"></i>
-            </a>
-        </div>
-    </div>
 
-        <!--          NAVBAR          -->
+            <!--          NAVBAR          (Agora compartível com a v4 do Bootstrap-->
 
-<div class="row">
-<div class="col-lg-12 mt-4">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-     toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="row">
+  <div class="col-lg-12 mt-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Sobre</a>
-    </li>
-      <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#noticias">Notícias</a>
-    </li>
-    </li>
-  </ul>
-  <form class="d-flex">
-    <input class="form-control me-2" type="search" placeholder="Busque" aria-label="Search">
-    <button class="btn btn-info" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-  </form>
-</div>
-</div>
-</nav>
-</div>
-</div>
-
-        <!--          Imagem de Apresentação         -->
-
-<div class="row">
-<div class="col-lg-8">
-  <img src="https://www.vrbo.com/pt-br/dicas-viagem/wp-content/uploads/67PoRLlKbEDl0ZGSgeKs2E/eff02c3a63848a35d322b172ebee7645/AdobeStock_209940755.jpeg" class="d-block w-100">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>Santiago, Chile</h5>
-    <p>Vista panorâmica da capital chilena.</p>
-    <p>Fonte: www.vrbo.com</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#noticias">Notícias</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Busque" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>
 
-        <!--          Texto ao lado da imagem de apresentação         -->
+            <!--          Imagem de Apresentação         -->
 
-<div class="col-lg-4">
-  <h2>Santiago, Chile</h2>
-  <br><br><br><br>
-  <p>Santiago, a capital do Chile, é um encontro harmonioso entre a modernidade urbana e a beleza natural. Situada no coração de um vale cercado pelos majestosos picos dos Andes, a cidade oferece uma paisagem deslumbrante que mistura arranha-céus contemporâneos com a serenidade das montanhas nevadas ao fundo.</p>
-  <p>A cada canto de Santiago, há uma mistura vibrante de culturas, refletida em sua arquitetura diversificada, culinária única e vida cultural pulsante. O Cerro San Cristóbal, um dos pontos mais altos da cidade, proporciona uma vista panorâmica que revela a extensão da metrópole contrastando com a imponência natural das montanhas que a cercam.</p>
-  <p>Ao explorar Santiago, é possível passear pelo encantador bairro boêmio de Bellavista, conhecido por suas ruas coloridas e arte de rua, ou visitar o histórico centro da cidade, onde se encontram palácios, praças e museus que contam a rica história do Chile.</p>
-  <p>Assim, Santiago se destaca não apenas como um centro econômico e cultural vital da América do Sul, mas também como um destino onde a natureza e a urbanidade se unem em perfeita harmonia, convidando os visitantes a se maravilharem com sua beleza singular.</p>
-</div>
-</div>
+  <div class="row">
+    <div class="col-lg-8">
+      <img src="https://www.vrbo.com/pt-br/dicas-viagem/wp-content/uploads/67PoRLlKbEDl0ZGSgeKs2E/eff02c3a63848a35d322b172ebee7645/AdobeStock_209940755.jpeg" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Santiago, Chile</h5>
+        <p>Vista panorâmica da capital chilena.</p>
+        <p>Fonte: www.vrbo.com</p>
+      </div>
+    </div>
+
+            <!--          Texto ao lado da imagem de apresentação         -->
+
+    <div class="col-lg-4">
+      <h2>Santiago, Chile</h2>
+      <br><br><br><br>
+      <p>Santiago, a capital do Chile, é um encontro harmonioso entre a modernidade urbana e a beleza natural. Situada no coração de um vale cercado pelos majestosos picos dos Andes, a cidade oferece uma paisagem deslumbrante que mistura arranha-céus contemporâneos com a serenidade das montanhas nevadas ao fundo.</p>
+      <p>A cada canto de Santiago, há uma mistura vibrante de culturas, refletida em sua arquitetura diversificada, culinária única e vida cultural pulsante. O Cerro San Cristóbal, um dos pontos mais altos da cidade, proporciona uma vista panorâmica que revela a extensão da metrópole contrastando com a imponência natural das montanhas que a cercam.</p>
+      <p>Ao explorar Santiago, é possível passear pelo encantador bairro boêmio de Bellavista, conhecido por suas ruas coloridas e arte de rua, ou visitar o histórico centro da cidade, onde se encontram palácios, praças e museus que contam a rica história do Chile.</p>
+      <p>Assim, Santiago se destaca não apenas como um centro econômico e cultural vital da América do Sul, mas também como um destino onde a natureza e a urbanidade se unem em perfeita harmonia, convidando os visitantes a se maravilharem com sua beleza singular.</p>
+    </div>
+  </div>
 
 <div class="row mt-4">
-<center><h3 id="noticias">Notícias</h3></center>
+  <center><h3 id="noticias">Notícias</h3></center>
 </div>
 
-      <!--          Cards das notícias         -->
+          <!--          Cards das notícias         -->
 
 <div class="row mt-4">
-<div class="col-lg-4">
-    <div class="card" style="width: 40rem;">
-<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/b7/valparaiso.jpg?w=1400&h=1400&s=1" class="card-img-top" alt="...">
-<div class="card-body">
-<p class="card-text">Conheça Valparaíso, suas curiosidades e principais pontos turísticos!.</p>
+    <div class="col-lg-4">
+        <div class="card" style="width: 40rem;">
+  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/b7/valparaiso.jpg?w=1400&h=1400&s=1" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Conheça Valparaíso, suas curiosidades e principais pontos turísticos!.</p>
+  </div>
 </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card" style="width: 40rem;">
+  <img src="https://freeway.tur.br/userfiles/45187208.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Visite a Patagônia! Viva uma nova experiência, pontos turísticos, trilhas e hotéis na região.</p>
+  </div>
 </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card" style="width: 40rem;">
+  <img src="https://imgmd.net/images/v1/guia/2882282/deserto-do-atacama.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Conheça o implacável deserto do Atacama e seus principais pontos turísticos e desbrave o grande deserto do Atacama.</p>
+  </div>
 </div>
-<div class="col-lg-4">
-  <div class="card" style="width: 40rem;">
-<img src="https://freeway.tur.br/userfiles/45187208.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<p class="card-text">Visite a Patagônia! Viva uma nova experiência, pontos turísticos, trilhas e hotéis na região.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-    <div class="card" style="width: 40rem;">
-<img src="https://imgmd.net/images/v1/guia/2882282/deserto-do-atacama.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-<p class="card-text">Conheça o implacável deserto do Atacama e seus principais pontos turísticos e desbrave o grande deserto do Atacama.</p>
-</div>
-</div>
-</div>
-</div>
+    </div>
+  </div>
 
-      <!--          Botão +Notícias         -->
+          <!--          Botão +Notícias         -->
 <div class="row mt-5">
-<div class="row">
-<div class="col-md-12 text-center mb-3">
-  <button id="addCardsBtn" class="btn btn-primary">+ NOTÍCIAS</button>
-  <button id="removeCardsBtn" class="btn btn-danger hidden">- NOTÍCIAS</button>
-</div>
+  <div class="row">
+    <div class="col-md-12 text-center mb-3">
+      <button id="addCardsBtn" class="btn btn-primary">+ NOTÍCIAS</button>
+      <button id="removeCardsBtn" class="btn btn-danger hidden">- NOTÍCIAS</button>
+    </div>
+  </div>
+  
+  <div id="cardsContainer" class="row"></div>
 </div>
 
-<div id="cardsContainer" class="row"></div>
-</div>
-
-      <!--          Cards informativos          -->
+          <!--          Cards informativos          -->
 
 <div class="row mt-4">
-<div class="col-lg-3">
-  <div class="card border-secondary mb-3" style="max-width: 25rem;">
-<div class="card-header">Viagens <i class="fa-solid fa-business-time"></i></div>
-<div class="card-body text-secondary">
-<h5 class="card-title">Passagens</h5>
-<p class="card-text">Custos de passagens de aviões, trens, ônibus e vans.</p>
+  <div class="col-lg-3">
+      <div class="card border-secondary mb-3" style="max-width: 25rem;">
+  <div class="card-header">Viagens <i class="fa-solid fa-business-time"></i></div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Passagens</h5>
+    <p class="card-text">Custos de passagens de aviões, trens, ônibus e vans.</p>
+  </div>
 </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card border-secondary mb-3" style="max-width: 25rem;">
+  <div class="card-header">Regiões <i class="fa-solid fa-map"></i></div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Regiões</h5>
+    <p class="card-text">Regiões chilenas e suas principais características.</p>
+  </div>
 </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card border-secondary mb-3" style="max-width: 25rem;">
+  <div class="card-header">Culinária <i class="fa-solid fa-kitchen-set"></i></div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Hora de comer!</h5>
+    <p class="card-text">Comidas típicas de cada região do país.</p>
+  </div>
 </div>
-<div class="col-lg-3">
-  <div class="card border-secondary mb-3" style="max-width: 25rem;">
-<div class="card-header">Regiões <i class="fa-solid fa-map"></i></div>
-<div class="card-body text-secondary">
-<h5 class="card-title">Regiões</h5>
-<p class="card-text">Regiões chilenas e suas principais características.</p>
+    </div>
+    <div class="col-lg-3">
+      <div class="card border-secondary mb-3" style="max-width: 25rem;">
+  <div class="card-header">Clima <i class="fa-solid fa-cloud"></i></div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Tempo</h5>
+    <p class="card-text">Previsão do tempo para cada região do país.</p>
+  </div>
 </div>
+    </div>
 </div>
-</div>
-<div class="col-lg-3">
-  <div class="card border-secondary mb-3" style="max-width: 25rem;">
-<div class="card-header">Culinária <i class="fa-solid fa-kitchen-set"></i></div>
-<div class="card-body text-secondary">
-<h5 class="card-title">Hora de comer!</h5>
-<p class="card-text">Comidas típicas de cada região do país.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3">
-  <div class="card border-secondary mb-3" style="max-width: 25rem;">
-<div class="card-header">Clima <i class="fa-solid fa-cloud"></i></div>
-<div class="card-body text-secondary">
-<h5 class="card-title">Tempo</h5>
-<p class="card-text">Previsão do tempo para cada região do país.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+    </div>
 
-        <!--          NEWSLETTER          -->
+            <!--          NEWSLETTER          -->
 
 <div class="newsletter mt-5">
     <form action="">
         <h4>Fique por dentro das notícias!</h4>
         <p>Fique por dentro das notícias e avisos sobre o Chile!</p>
+      <br>
         <div class="emailbox">
           <i class="fa-solid fa-envelope"></i>
             <input class="tbox" type="email" placeholder="E-mail">
@@ -200,32 +203,32 @@
     </form>
 </div>
 
-        <!--          FOOTER          -->
+            <!--          FOOTER          -->
 
 <footer id="footer">
-<div class="footer-content">
-  <div class="footer-section">
-      <i class="fa-solid fa-plane"></i>
+  <div class="footer-content">
+      <div class="footer-section">
+          <i class="fa-solid fa-plane"></i>
+      </div>
+      <div class="footer-section">
+          <ul class="footer-menu">
+              <li class="footer-menu-item"><i class="fa-solid fa-phone"></i> <a href="#">+55 00 0000-0000</a></li>
+              <li class="footer-menu-item"><i class="fa-solid fa-phone"></i> <a href="#">+55 00 0000-0000</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <ul class="footer-menu">
+              <li class="footer-menu-item"><i class="fa-solid fa-envelope"></i> <a href="#">conheca_chile@cchile.com</a></li>
+              <li class="footer-menu-item"><i class="fa-solid fa-envelope"></i> <a href="#">conheca_chile@gmail.com</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <ul class="footer-menu">
+              <li class="footer-menu-item"><i class="fa-solid fa-location-dot"></i> <a href="#">Rua 1, Centro de São Paulo, São Paulo</a></li>
+              <li class="footer-menu-item"><i class="fa-solid fa-location-dot"></i> <a href="#">Rua 1, Centro do Rio de Janeiro, Rio de Janeiro</a></li>
+          </ul>
+      </div>
   </div>
-  <div class="footer-section">
-      <ul class="footer-menu">
-          <li class="footer-menu-item"><i class="fa-solid fa-phone"></i> <a href="#">+55 00 0000-0000</a></li>
-          <li class="footer-menu-item"><i class="fa-solid fa-phone"></i> <a href="#">+55 00 0000-0000</a></li>
-      </ul>
-  </div>
-  <div class="footer-section">
-      <ul class="footer-menu">
-          <li class="footer-menu-item"><i class="fa-solid fa-envelope"></i> <a href="#">conheca_chile@cchile.com</a></li>
-          <li class="footer-menu-item"><i class="fa-solid fa-envelope"></i> <a href="#">conheca_chile@gmail.com</a></li>
-      </ul>
-  </div>
-  <div class="footer-section">
-      <ul class="footer-menu">
-          <li class="footer-menu-item"><i class="fa-solid fa-location-dot"></i> <a href="#">Rua 1, Centro de São Paulo, São Paulo</a></li>
-          <li class="footer-menu-item"><i class="fa-solid fa-location-dot"></i> <a href="#">Rua 1, Centro do Rio de Janeiro, Rio de Janeiro</a></li>
-      </ul>
-  </div>
-</div>
 </footer>
 
 <script>document.addEventListener('DOMContentLoaded', function() {
